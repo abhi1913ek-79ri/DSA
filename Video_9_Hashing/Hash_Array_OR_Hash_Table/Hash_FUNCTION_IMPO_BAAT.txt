@@ -1,0 +1,2 @@
+1.Hash map :
+    Is used for faster access to the previously stored value 	using key wich is = hash_value(element_key)

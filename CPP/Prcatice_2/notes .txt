@@ -1,0 +1,33 @@
+1. unlike that of C when we try to retrieve the value of a no initiated vlaue of array like arr[0] where we have not declared it previously then we get a non zero garbage value.when we not assigned in any of the value(when we get some values declare but some not then it get in assigned values as zero)
+
+2. when we try to index more then size -1 then we get an error.
+
+3. In cpp when we should have to initialize the fisrt index 
+
+if we not done we get more confused.. due to the code 
+
+code ::
+
+
+int main() {
+  int arr[5]{arr[4] = 3};
+  for (int i = 0; i < 5; i++) {
+    cout << arr[i] << " ";
+  }
+  return 0;
+}
+
+output ::
+3 0 0 0 3
+
+
+4. In 2D when we not declare a single elemnet
+0               4201120         6422224
+6422280         6422476         1988878704
+1118019363              -2              6422280
+
+5.In 2D array if declared arr[0][0]=1
+
+1               4201120         6422224
+6422280         6422476         1988878704
+1118019363              -2              6422280

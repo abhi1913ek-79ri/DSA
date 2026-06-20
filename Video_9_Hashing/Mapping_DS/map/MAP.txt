@@ -1,0 +1,97 @@
+In C++, the Standard Template Library (STL) provides a `map` container, which is part of the `<map>` header. A `map` is an associative container that stores key-value pairs, where each key is unique, and the values are accessed using their corresponding keys.
+
+## Basic Usage of `map`
+ 1. Include the Necessary Header
+cpp
+#include <iostream>
+#include <map>
+
+
+ 2. Declare a `map`
+cpp
+map<int, string> myMap; // Key: int, Value: string
+
+
+ 3. Insert Elements into the `map`
+cpp
+myMap[1] = "Apple";
+myMap[2] = "Banana";
+myMap[3] = "Cherry";
+
+// Another way to insert
+myMap.insert({4, "Date"});
+myMap.insert(make_pair(5, "Elderberry"));
+
+
+ 4. Access Elements
+cpp
+cout << "Element at key 2: " << myMap[2] << endl;
+
+
+ 5. Iterate Through the `map`
+cpp
+for (const auto &pair : myMap) {
+    cout << "Key: " << pair.first << ", Value: " << pair.second << endl;
+}
+
+
+ 6. Check If a Key Exists (`find` function)
+cpp
+int key = 3;
+if (myMap.find(key) != myMap.end()) {
+    cout << "Key " << key << " exists with value: " << myMap[key] << endl;
+} else {
+    cout << "Key " << key << " not found." << endl;
+}
+
+
+ 7. Erase an Element
+cpp
+myMap.erase(2); // Removes the key-value pair with key 2
+
+
+ 8. Size of the `map`
+cpp
+cout << "Size of map: " << myMap.size() << endl;
+
+
+ 9. Check if `map` is Empty
+cpp
+if (myMap.empty()) {
+    cout << "Map is empty." << endl;
+} else {
+    cout << "Map is not empty." << endl;
+}
+
+
+---
+
+## Example Program
+cpp
+#include <iostream>
+#include <map>
+
+int main() {
+    map<int, string> myMap;
+
+    myMap[1] = "One";
+    myMap[2] = "Two";
+    myMap[3] = "Three";
+
+    cout << "Map contents:" << endl;
+    for (const auto &pair : myMap) {
+        cout << "Key: " << pair.first << ", Value: " << pair.second << endl;
+    }
+
+    return 0;
+}
+
+ Output
+
+Map contents:
+Key: 1, Value: One
+Key: 2, Value: Two
+Key: 3, Value: Three
+
+
+Would you like more advanced features like `unordered_map` or `multimap`? 😊

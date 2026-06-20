@@ -1,0 +1,10 @@
+if rotation 
+always think about 
+twice traversal
+from i = 2*n - 1 to 0
+    if i < n
+        index = i
+    else
+        index = i - n
+
+        or i = i%n;

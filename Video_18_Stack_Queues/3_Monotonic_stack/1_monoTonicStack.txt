@@ -1,0 +1,7 @@
+Monotonic stack :
+A monotonic stack is a data structure that maintains its elements in
+a specific order, either increasing or decreasing or some other order.
+It is often used to solve problems related to finding the next greater
+ or smaller element in an array.
+
+like this : [3, 2, 1, 4, 5]
