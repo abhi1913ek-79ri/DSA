@@ -1,0 +1,4 @@
+.tmp.driveupload/
+*.exe
+.vscode/
+*.pdf

@@ -1,0 +1,7 @@
+1. floyd cycle detection algorithm
+2. index placement algorithm
+---- > jabhi bhi array me element ki range  1 to n
+3. cycle sort alogorithm
+
+----------- To be done
+1. Dutch national flag algorithm

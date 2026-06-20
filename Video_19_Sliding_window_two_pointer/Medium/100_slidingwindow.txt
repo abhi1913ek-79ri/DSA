@@ -1,0 +1,25 @@
+“Right adds problem or solution, left fixes problem”
+
+
+e pura pattern yaad rakh:
+👉 "Longest subarray with at most k condition"
+Template:
+expand r
+update condition
+while(invalid) shrink l
+update answer
+
+
+
+
+strivers atoz sheet if vs while
+Striver Trick Kab Use Kare?
+
+👉 Mostly in:
+
+sum problems
+longest valid subarray with smooth constraint
+
+👉 Not safe in:
+
+distinct elements problems (like this) ❌

@@ -47,7 +47,7 @@ int subArraySumKBrute2(vector<int>& arr,int k){
 int subArraySumKOptimal(vector<int>& arr,int k){
     int n=arr.size();int cnt=0;int prefixSum=0;
     unordered_map<int,int> mapp;
-    mapp[0]=1;//important thing as prefix sum=0 is cnt = 1
+    mapp[0]=1; //important thing as prefix sum=0 is cnt = 1 for empty array
     for(int i=0;i<n;i++){
         prefixSum+=arr[i];
         int remove=prefixSum-k;

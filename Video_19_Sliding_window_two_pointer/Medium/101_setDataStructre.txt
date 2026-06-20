@@ -1,0 +1,15 @@
+| Operation   | Function                      | Time Complexity |
+| ----------- | ----------------------------- | --------------- |
+| Insert      | `st.insert(x)` / `emplace(x)` | **O(log n)**    |
+| Delete      | `st.erase(x)`                 | **O(log n)**    |
+| Search      | `st.find(x)` / `count(x)`     | **O(log n)**    |
+| Size        | `st.size()`                   | **O(1)**        |
+| Iterate     | loop over set                 | **O(n)**        |
+| Lower Bound | `st.lower_bound(x)`           | **O(log n)**    |
+| Upper Bound | `st.upper_bound(x)`           | **O(log n)**    |
+
+
+| Approach | Behavior            |
+| -------- | ------------------- |
+| set      | shrink step-by-step |
+| map      | jump directly 💀    |

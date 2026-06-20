@@ -15,9 +15,10 @@ int longestSubarrayKBrute(vector<int>& arr, int k) {
         }
     }
     return len;
+    //  TC = O(n*n)
 }
 //Optimal For all positive as well as negative 
-// Using Hashing
+// Using Hash map plus prefix sum
 int longestSubarraySumKOptimal(vector<int> &arr, int k)
 {
     // code here
