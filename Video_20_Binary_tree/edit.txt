@@ -5,3 +5,7 @@ TreeNode* root2 = new TreeNode(0);
     root2->left->right = new TreeNode(4);
     root2->right->left = new TreeNode(5);
     root2->right->right = new TreeNode(6);
+
+
+
+// must read 22_countGoodNumber.cpp in order to understand recusion and how to use it.
