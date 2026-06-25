@@ -1,0 +1,9 @@
+Each operation adds N−1 total
+So sum(A) must be divisible by N−1
+
+k = number of operations
+
+No element can be larger than k
+
+If any rule fails → -1
+
