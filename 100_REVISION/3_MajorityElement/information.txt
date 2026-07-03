@@ -1,0 +1,4 @@
+At most k - 1 majority elements ho sakte hain.
+k - 1 candidates aur k - 1 counters maintain karenge.
+First pass me candidates find karenge.
+Second pass me frequencies verify karenge.
