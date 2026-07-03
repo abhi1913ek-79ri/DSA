@@ -21,7 +21,8 @@ vector<int> twoSum_brute(vector<int>& nums,int target){
 }
 
 
-// Optimal : hashMap
+ 
+// Optimal : hashMap two pointers work nhi karega kyunki index mang ra hain
 vector<int> twoSum_optimal(vector<int>& nums,int target){
     int n = nums.size();
     unordered_map<int,int> mpp;
