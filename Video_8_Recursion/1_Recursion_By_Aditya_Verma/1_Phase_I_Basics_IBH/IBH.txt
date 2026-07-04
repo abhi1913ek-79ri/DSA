@@ -1,0 +1,47 @@
+Base Case → Sabse chhota valid input.
+Hypothesis → Maan lo recursion chhote input ke liye sahi kaam karta hai.
+Induction → Us chhote answer ka use karke current answer banao.
+
+
+
+pahle recusive call strack ka dry run karke dekho induction step mil jayega 
+
+
+
+//// NOTE =-----------------
+IBH best hai:
+✅ Factorial
+✅ Sum of N
+✅ Power
+✅ Reverse String (returning a new string)
+✅ Sum of Digits
+✅ Sort Array (Aditya Verma)
+✅ Sort Stack
+✅ Delete Middle of Stack
+✅ Reverse Stack
+✅ K-th Symbol in Grammar
+✅ Josephus
+✅ Generate Parentheses
+✅ Backtracking foundation
+Two Pointer Recursion best hai:
+✅ Palindrome
+✅ Reverse Array
+✅ Reverse String in-place
+✅ Binary Search
+✅ Tree Traversals (parameter passing)
+
+#include<bits/stdc++.h>
+using namespace std;
+// Reverse a number
+
+// hyphthesis
+// assumes 
+// reverse(n/10) correctly return reverse of n/10
+
+// induction
+// 
+
+int main(){
+    
+    return 0;
+}

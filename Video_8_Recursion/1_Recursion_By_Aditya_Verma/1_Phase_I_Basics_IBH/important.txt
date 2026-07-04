@@ -1,0 +1,66 @@
+📝 Note: cin ke baad getline() Problem
+Problem
+
+Agar tum likhte ho:
+
+int t;
+cin >> t;
+
+string s;
+getline(cin, s);
+
+Aur input hai:
+
+3
+HELLO
+WORLD
+CHATGPT
+
+To getline() kya read karega?
+
+""
+
+Matlab empty string.
+
+Why?
+
+cin >> t sirf 3 read karta hai.
+
+Lekin Enter (\n) input buffer me reh jata hai.
+
+Input Buffer
+
+3\nHELLO\nWORLD\n
+
+     ↑
+     newline is still here
+
+Ab
+
+getline(cin, s);
+
+sabse pehle wahi newline read kar leta hai.
+
+Isliye
+
+s = ""
+✅ Solution 1 (Most Common)
+int t;
+cin >> t;
+
+cin.ignore();
+
+while(t--){
+    string s;
+    getline(cin, s);
+
+    cout << s << '\n';
+}
+
+cin.ignore() newline ko remove kar deta hai.
+
+✅ Solution 2 (Recommended)
+
+Agar kabhi kabhi extra spaces ya characters bhi ho sakte hain to:
+
+cin.ignore(numeric_limits<streamsize>::max(), '\n');
