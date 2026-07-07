@@ -1,0 +1,18 @@
+| Problem | Store            |
+| ------- | ---------------- |
+| Count   | Frequency        |
+| Longest | First Occurrence |
+
+
+| Version                       | Pattern                   |
+| ----------------------------- | ------------------------- |
+| Count Subarray Sum = K        | Prefix + Frequency        |
+| Longest Sum = K (Any Integer) | Prefix + First Occurrence |
+| Longest Sum = K (Positive)    | Sliding Window            |
+
+
+// sliding window works only for monotonic problems like positive numbers. For any integer array, use prefix sum + hashmap.
+// and for counting problems, use frequency map. For longest problems, use first occurrence map.
+// and for binary/nice subarrays, use AtMost(K) - AtMost(K-1).
+// and for positive array + longest sum, use sliding window.
+// and for any integer array + sum problems, use prefix sum + hashmap.

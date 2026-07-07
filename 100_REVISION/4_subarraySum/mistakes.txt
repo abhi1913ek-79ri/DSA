@@ -1,0 +1,100 @@
+==============================
+PREFIX SUM & SLIDING WINDOW MISTAKES
+==============================
+
+LC 560 - Subarray Sum Equals K
+
+1. ❌ Stored index instead of frequency.
+   Wrong:
+       prefix[sum] = i;
+   Correct:
+       prefix[sum]++;
+
+2. ❌ Did cnt++ instead of adding frequency.
+   Wrong:
+       cnt++;
+   Correct:
+       cnt += prefix[sum-k];
+
+3. ❌ Forgot prefix[0] = 1.
+   Reason:
+       Handles subarrays starting from index 0.
+
+4. ❌ Confused Frequency Map with First Occurrence Map.
+   Rule:
+       Count Problems  -> Frequency
+       Longest Problems -> First Occurrence
+
+5. ❌ Forgot the intuition:
+       currentPrefix - previousPrefix = K
+       previousPrefix = currentPrefix - K
+
+----------------------------------------
+
+Sliding Window (AtMost Template)
+
+6. ❌ Forgot to include the first element in the window.
+
+7. ❌ Used cnt++.
+   Correct:
+       cnt += (r-l+1);
+
+8. ❌ Wrong order of operations.
+   Correct Order:
+       Add nums[r]
+       ↓
+       Shrink while(sum > k)
+       ↓
+       Count (r-l+1)
+       ↓
+       r++
+
+9. ❌ Didn't handle k < 0.
+   Correct:
+       if(k < 0) return 0;
+
+10. ❌ Forgot empty array edge case.
+    Better:
+       if(nums.empty()) return 0;
+
+11. ❌ Thought AtMost(K)-AtMost(K-1) works for every Sum = K problem.
+    Reality:
+       Only for monotonic counting problems like
+       LC 930
+       LC 1248
+
+----------------------------------------
+
+Golden Rules
+
+✔ Count Subarrays
+    -> Frequency Map
+
+✔ Longest Subarray
+    -> First Occurrence Map
+
+✔ Binary/Nice Subarrays
+    -> AtMost(K) - AtMost(K-1)
+
+✔ Positive Array + Longest Sum
+    -> Sliding Window
+
+✔ Any Integer Array + Sum Problems
+    -> Prefix Sum + HashMap
+
+
+
+
+Longest Subarray Sum = K
+
+1. ❌ prefix[0] = 0
+   ✅ prefix[0] = -1
+
+2. ❌ Overwrote first occurrence.
+   ✅ Store only first occurrence.
+
+3. ❌ Used i-index+1
+   ✅ Length = i-index
+
+4. ✔ Count Problems → Frequency
+   ✔ Longest Problems → First Occurrence

@@ -1,0 +1,87 @@
+==============================
+TEMPLATES.txt
+==============================
+
+1. Prefix Sum Count
+
+sum += nums[i]
+
+answer += freq[sum-k]
+
+freq[sum]++
+
+--------------------------------
+
+2. Prefix Sum Longest
+
+sum += nums[i]
+
+if(sum==k)
+
+ans=i+1
+
+if(sum not in map)
+
+store first index
+
+if(sum-k found)
+
+update answer
+
+--------------------------------
+
+3. Sliding Window
+
+while(r<n)
+
+add nums[r]
+
+while(window invalid)
+
+remove nums[l]
+
+update answer
+
+r++
+
+--------------------------------
+
+4. Sliding Window Count
+
+while(r<n)
+
+add nums[r]
+
+while(window invalid)
+
+remove nums[l]
+
+count += (r-l+1)
+
+r++
+
+--------------------------------
+
+5. Prefix Modulo
+
+rem = prefix % k
+
+if(rem<0)
+
+rem+=k
+
+answer += freq[rem]
+
+freq[rem]++
+
+--------------------------------
+
+6. Kadane
+
+sum += nums[i]
+
+answer=max(answer,sum)
+
+if(sum<0)
+
+sum=0

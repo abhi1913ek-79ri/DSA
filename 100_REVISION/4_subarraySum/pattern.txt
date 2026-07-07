@@ -1,0 +1,103 @@
+==============================
+PATTERNS.txt
+==============================
+
+1. Prefix Sum + Frequency Map
+
+Use When
+
+✔ Count Subarrays
+
+Examples
+
+LC560
+LC974
+
+--------------------------------
+
+2. Prefix Sum + First Occurrence
+
+Use When
+
+✔ Longest Subarray
+
+Examples
+
+LC325
+LC525
+
+--------------------------------
+
+3. Sliding Window
+
+Use When
+
+✔ Positive Numbers
+✔ Longest
+✔ Minimum Length
+
+Examples
+
+LC209
+
+--------------------------------
+
+4. Sliding Window AtMost
+
+Formula
+
+Exactly(K)
+
+=
+
+AtMost(K)
+
+-
+
+AtMost(K-1)
+
+Examples
+
+LC930
+LC1248
+
+--------------------------------
+
+5. Prefix Modulo
+
+Use When
+
+Divisible by K
+
+Examples
+
+LC974
+LC523
+
+--------------------------------
+
+6. Kadane
+
+Use When
+
+Maximum Subarray Sum
+
+Examples
+
+LC53
+LC918
+
+
+-------------------
+
+LC525 (Contiguous Array)
+
+0 -> -1
+
+↓
+
+Find Longest Subarray Sum = 0
+
+↓
+
+Prefix Sum + First Occurrence
