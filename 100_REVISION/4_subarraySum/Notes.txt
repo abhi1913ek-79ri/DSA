@@ -1,3 +1,19 @@
+| Problem Type                      | Prefix me kya store hota hai? | Extra Data Structure         | Example               |
+| --------------------------------- | ----------------------------- | ---------------------------- | --------------------- |
+| Range Sum `[l,r]`                 | `prefixSum[i]`                | None                         | `pref[r]-pref[l-1]`   |
+| Range XOR                         | `prefixXor[i]`                | None                         | `pref[r]^pref[l-1]`   |
+| Count of 0/1/Even/Odd             | Prefix Count                  | None                         | `count[r]-count[l-1]` |
+| Longest Subarray with Sum = K     | Running Prefix Sum            | **HashMap<sum, firstIndex>** | `sum-K` search        |
+| Count of Subarrays with Sum = K   | Running Prefix Sum            | **HashMap<sum, frequency>**  | `freq[sum-K]`         |
+| Longest Subarray with Equal 0 & 1 | Running Prefix Sum (0→-1)     | **HashMap<sum, firstIndex>** | First occurrence      |
+| Count Equal 0 & 1                 | Running Prefix Sum            | **HashMap<sum, frequency>**  | Frequency             |
+| Maximum Subarray Sum (Kadane)     | ❌ Prefix nahi                 | Running Sum                  | Kadane Algorithm      |
+| Maximum Subarray using Prefix     | Prefix Minimum                | Variable `minPrefix`         | `pref[i]-minPrefix`   |
+| Range Minimum                     | ❌ Prefix nahi                 | Segment Tree / Sparse Table  | RMQ                   |
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
 | Problem | Store            |
 | ------- | ---------------- |
 | Count   | Frequency        |
@@ -16,3 +32,28 @@
 // and for binary/nice subarrays, use AtMost(K) - AtMost(K-1).
 // and for positive array + longest sum, use sliding window.
 // and for any integer array + sum problems, use prefix sum + hashmap.
+
+
+
+Positive Array
+        ↓
+Sliding Window ✅
+
+Contains Negative
+        ↓
+Prefix Sum ✅
+
+Contains Positive + Negative
+        ↓
+Sliding Window ❌
+
+Longest / Count
+        ↓
+Prefix Sum + HashMap
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+Bhai sun Hum prefix sum ka use karke range sum karte hain
