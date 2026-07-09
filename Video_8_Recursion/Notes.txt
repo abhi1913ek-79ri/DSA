@@ -1,0 +1,478 @@
+Bhai ye bahut achha idea hai. 🔥 Ab chat itni badi ho gayi hai ki context lose ho jayega. Isliye niche wala summary copy karke **Project Resource** me daal de. Iske baad hum fresh chat me wahi se continue karenge.
+
+---
+
+# RECURSION LEARNING PROJECT (Current Status)
+
+## Goal
+
+Master recursion for placement interviews using **IBH (Induction Base Hypothesis)** approach first, then Backtracking.
+
+---
+
+# Learning Style
+
+Every recursion problem should contain:
+
+```text
+1. Problem Statement
+
+2. Hypothesis
+
+3. Induction
+
+4. Base Condition
+
+5. Code
+
+6. Time Complexity
+
+7. Space Complexity
+
+8. Dry Run
+
+9. Edge Cases
+
+10. Interview Notes
+```
+
+Never skip IBH.
+
+---
+
+# Phase 1 (Completed ✅)
+
+## Basic Recursion
+
+* Print 1 to N
+* Print N to 1
+* Sum of N numbers
+* Factorial
+* Power(x,n) Brute
+* Sum of Digits
+* Count Digits
+* Reverse String
+* Palindrome (String)
+* Fibonacci
+
+Notes
+
+* IBH understood.
+* Base condition understood.
+* Recursion tree understood.
+* Exponential recursion understood.
+
+---
+
+# Phase 2 (Completed ✅)
+
+## IBH Problems
+
+Completed
+
+* Sort Array using Recursion
+* Sort Stack
+* Delete Middle Element of Stack
+* Reverse Stack
+* Kth Symbol in Grammar (LC 779)
+* Josephus Problem
+
+Notes
+
+Every problem solved using
+
+```text
+IBH
+
+↓
+
+Remove one element
+
+↓
+
+Solve smaller problem
+
+↓
+
+Insert while returning
+```
+
+---
+
+# Binary Exponentiation (Completed ✅)
+
+Learned
+
+* Why O(n) recursion fails
+* Why constraints matter
+* Binary Exponentiation
+* Modulo arithmetic
+* Fast Power
+
+Formula
+
+Even
+
+```text
+x^n = (x²)^(n/2)
+```
+
+Odd
+
+```text
+x^n = x × (x²)^((n−1)/2)
+```
+
+Complexity
+
+```text
+TC = O(log n)
+
+SC = O(log n)
+```
+
+---
+
+# Count Good Numbers (Completed ✅)
+
+Observation
+
+```text
+Answer
+
+=
+
+5^(Even Positions)
+
+×
+
+4^(Odd Positions)
+```
+
+where
+
+```cpp
+even = (n+1)/2
+
+odd = n/2
+```
+
+Then compute
+
+```cpp
+powMOD(5,even)
+
+powMOD(4,odd)
+```
+
+using Binary Exponentiation.
+
+---
+
+# Important Learnings
+
+## Modulo
+
+Always
+
+```cpp
+1LL * a * b % MOD
+```
+
+Never
+
+```cpp
+a*b%MOD
+```
+
+if overflow possible.
+
+---
+
+## INT_MIN Edge Case
+
+For Leetcode 50
+
+Never
+
+```cpp
+-n
+```
+
+Instead
+
+```cpp
+long long N=n;
+N=-N;
+```
+
+---
+
+## Binary Exponentiation
+
+Preferred
+
+```cpp
+return power(x*x,n/2);
+```
+
+Odd
+
+```cpp
+return x*power(x*x,(n-1)/2);
+```
+
+---
+
+# String Notes
+
+Covered
+
+* length()
+* size()
+* substr()
+* push_back()
+* pop_back()
+* back()
+* front()
+* getline()
+* cin.ignore()
+
+Input issue
+
+Always
+
+```cpp
+cin.ignore();
+getline(cin,s);
+```
+
+after integer input.
+
+---
+
+# Stack Notes
+
+Learned recursively
+
+* Sort
+* Reverse
+* Delete Middle
+
+Pattern
+
+```text
+Pop
+
+↓
+
+Solve
+
+↓
+
+Push while returning
+```
+
+---
+
+# Complexity Learned
+
+O(n)
+
+O(2^n)
+
+O(log n)
+
+O(n²)
+
+How recursion tree decides complexity.
+
+---
+
+# Current Skill
+
+Basic Recursion
+
+★★★★★
+
+IBH
+
+★★★★★
+
+Tree Recursion
+
+★★★★★
+
+Binary Exponentiation
+
+★★★★★
+
+Complexity Analysis
+
+★★★★★
+
+---
+
+# Coding Rules
+
+Always use
+
+```text
+Hypothesis
+
+Induction
+
+Base Condition
+```
+
+Write TC and SC.
+
+Use helper function whenever required.
+
+Prefer recursion first.
+
+Then optimize.
+
+---
+
+# Next Phase
+
+## BACKTRACKING
+
+Order
+
+1.
+
+Print Subsequences
+
+2.
+
+Subsets (LC 78)
+
+3.
+
+Subset II
+
+4.
+
+Letter Case Permutation
+
+5.
+
+Permutations (LC 46)
+
+6.
+
+Combination Sum
+
+7.
+
+Combination Sum II
+
+8.
+
+Palindrome Partitioning
+
+9.
+
+N Queens
+
+10.
+
+Sudoku Solver
+
+---
+
+# Future Topics
+
+After Backtracking
+
+* Rat in Maze
+* Word Search
+* Restore IP Address
+* Generate Parentheses
+* Expression Add Operators
+
+---
+
+# Interview Important Problems
+
+Must Know
+
+* Fibonacci
+* Kth Grammar
+* Josephus
+* Reverse Stack
+* Sort Stack
+* Delete Middle
+* Subsequences
+* Subsets
+* Permutations
+* Combination Sum
+* N Queens
+* Sudoku
+* Binary Exponentiation
+
+---
+
+# Learning Rule
+
+Never memorize.
+
+Always derive.
+
+Follow
+
+```text
+Hypothesis
+
+↓
+
+Induction
+
+↓
+
+Base Condition
+
+↓
+
+Dry Run
+
+↓
+
+Code
+
+↓
+
+Complexity
+```
+
+---
+
+# Current Progress
+
+```text
+Basic Recursion         ✅ 100%
+
+IBH                    ✅ 100%
+
+Binary Exponentiation  ✅ 100%
+
+Modulo                 ✅ 100%
+
+Backtracking           ⬜ 0%
+
+Overall Progress
+
+≈ 65%
+```
+
+---
+
+## 🔥 One more instruction for the next chat
+
+Start the new chat with something like:
+
+> **"Continue Recursion Project. Assume everything above is completed. Start Backtracking from Print Subsequences using the same IBH-first teaching style. Give hints first, don't directly give code unless I ask."**
+
+Isse hum bina context lose kiye directly **Backtracking** start kar denge. 🚀

@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 // Kth grammar LC 779
 
@@ -15,19 +15,24 @@ using namespace std;
 //           else if(KG(n-1,k/2) == 1 && k&1) -> 1
 //           else if(KG(n-1,k/2) ==1 && !(k&1)) -> 0
 
-// Base condition 
+// Base condition
 // if(n==1) return 0;
 
-int kg(int n,int k){
+int kg(int n, int k)
+{
     // base condition
-    if(n==1) return 0;
+    if (n == 1)
+        return 0;
 
     // induction
-    bool isOdd = k&1;
-    int kgPrev = kg(n-1,isOdd?k/2+1:k/2);
-    if(kgPrev){
-        if(isOdd) return 1;
-        else return 0;
+    bool isOdd = k & 1;
+    int kgPrev = kg(n - 1, isOdd ? k / 2 + 1 : k / 2);
+    if (kgPrev)
+    {
+        if (isOdd)
+            return 1;
+        else
+            return 0;
     }
 
     return (isOdd) ? 0 : 1;
@@ -36,7 +41,24 @@ int kg(int n,int k){
 // TC = O(n)
 // SC = O(n)
 
-int main(){
-    
+// ADITYA'S OBSERVATION
+
+int kg(int n, int k)
+{
+    // base condition
+    if (n == 1)
+        return 0;
+
+    // induction
+    int mid = pow(2, n - 1) / 2;
+    if (k <= mid)
+        return kg(n - 1, k);
+
+    return !kg(n - 1, k - mid);
+}
+
+int main()
+{
+
     return 0;
 }

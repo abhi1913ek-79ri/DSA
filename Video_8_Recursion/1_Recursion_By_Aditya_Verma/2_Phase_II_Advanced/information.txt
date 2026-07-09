@@ -1,3 +1,8 @@
 here also IBH
 1. sort a stack
 usnig IBH - induction, Base Condition , HypothesisTo sort a stack using Induction, Base Condition, and Hypothesis (IBH), we can
+Jab bhi answer me a^b dikhe aur b bahut bada ho, dimaag me turant Binary Exponentiation aani chahiye.
+
+
+
+
