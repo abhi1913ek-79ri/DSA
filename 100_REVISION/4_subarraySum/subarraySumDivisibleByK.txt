@@ -1,0 +1,15 @@
+// Optimal : prefix Sum , hashMap , similar to subarray sum == k
+// also need to handle negative remainder
+// if(rem < 0) rem += k;
+
+
+// -- this is important
+becoz  if( rem == 0) it is already divisible by k, so we can count it as a valid subarray.
+// hashMap[0] = 1;
+
+
+
+Note 
+// Note : 
+// If two prefix sums have the same remainder when divided by k,
+// then the subarray between them is divisible by k.
