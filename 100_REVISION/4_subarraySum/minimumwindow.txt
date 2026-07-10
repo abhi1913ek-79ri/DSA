@@ -1,0 +1,111 @@
+Pattern
+Variable Size Sliding Window
+When to Use
+✔ Array contains only positive / non-negative elements.
+✔ Need minimum/maximum length window.
+✔ Condition is based on sum >= target.
+Algorithm
+1. Expand window (r++)
+2. Add nums[r] to sum.
+3. While(sum >= target)
+      - Update minimum length.
+      - Remove nums[l].
+      - l++
+4. Continue until end.
+Why Sliding Window Works?
+All elements are positive.
+
+Expand window  -> Sum always increases.
+Shrink window  -> Sum always decreases.
+
+Monotonic behaviour exists.
+Hence Sliding Window is valid.
+Why Prefix Sum Doesn't Work?
+Condition is
+
+sum >= target
+
+NOT
+
+sum == target
+
+HashMap + Prefix Sum is mainly useful for equality-based problems.
+Template
+int l = 0;
+int sum = 0;
+int ans = n + 1;
+
+for(int r = 0; r < n; r++){
+
+    sum += nums[r];
+
+    while(sum >= target){
+
+        ans = min(ans, r - l + 1);
+
+        sum -= nums[l];
+        l++;
+    }
+}
+
+return (ans == n + 1) ? 0 : ans;
+Complexity
+TC : O(n)
+
+SC : O(1)
+Common Mistakes
+❌ Using sum == target
+
+✅ Use sum >= target
+
+-------------------------
+
+❌ Applying Prefix Sum + HashMap
+
+✅ Use Sliding Window
+
+-------------------------
+
+❌ Forgetting to return 0
+when no valid subarray exists.
+
+-------------------------
+
+❌ Using Sliding Window on
+arrays containing negative numbers.
+
+(It works only for positive/non-negative arrays.)
+🧠 Memory Trick
+Positive Array
+
+↓
+
+Need Minimum Length
+
+↓
+
+Sliding Window
+
+↓
+
+Expand
+
+↓
+
+While(sum >= target)
+
+↓
+
+Update Answer
+
+↓
+
+Shrink
+⭐ Pattern Rule (Important)
+Sum == K
+        ↓
+Prefix Sum
+
+Sum >= K
+        ↓
+Sliding Window (Positive Array)

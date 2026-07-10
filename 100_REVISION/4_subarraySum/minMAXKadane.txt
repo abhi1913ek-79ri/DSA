@@ -1,0 +1,12 @@
+Maximum Kadane
+
+↓
+
+Discard Negative Prefix
+
+
+Minimum Kadane
+
+↓
+
+Discard Positive Prefix

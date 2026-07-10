@@ -101,3 +101,19 @@ Find Longest Subarray Sum = 0
 ↓
 
 Prefix Sum + First Occurrence
+
+----------------------------------------------------------------
+
+
+Equality
+
+↓
+
+Prefix Sum
+
+
+Inequality (>=)
+
+↓
+
+Sliding Window
