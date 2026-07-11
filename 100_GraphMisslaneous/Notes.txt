@@ -1,0 +1,23 @@
+Build Graph
+
+↓
+
+Visited Array
+
+↓
+
+for every node
+
+↓
+
+if(!visited)
+
+↓
+
+DFS
+
+↓
+
+Collect Information
+
+80% of graph question  

@@ -1,0 +1,9 @@
+Subsequences and subsets are
+give me same ouput 
+subsequences realted to strings,
+whlesubsets are related to sets or array of elements.
+
+Done By
+Identificatioion : choices + decision
+Recurstion Tree or Decision Tree or choice Diagram - By INPUT - OUTPUT Method
+Write the according to the Recursion Tree or Decision Tree or choice Diagram.
