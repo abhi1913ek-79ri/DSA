@@ -147,7 +147,7 @@ int main(){
             q = tempArr;
         }
 
-        vector<int> ans = sumAndMultiply_optimal(s,queries);
+        vector<int> ans = sumAndMultiply(s,queries);
         bool flag = false;
         for(auto& a : ans){
             if(flag) cout << " ";
