@@ -1,0 +1,19 @@
+Agr  Kabhi bhi 
+Power set , all subsets , all subsequences bole 
+,all ways use same subset pattern 
+for unique subsets/susequences use set or unordered_set to avoid duplicates.
+with unique and sorting use map so that it's sorted and unique.
+
+
+
+⭐⭐⭐⭐⭐ Sabse Important Observation
+
+Bhai...
+
+Ab samajh aaya kyu main bol raha tha ki
+
+LC90(subset ||) is NOT LC78(subset) + one if statement.
+
+Ye actually recursion ka doosra pattern hai.
+
+Pattern hi change ho gaya.

@@ -7,3 +7,68 @@ Done By
 Identificatioion : choices + decision
 Recurstion Tree or Decision Tree or choice Diagram - By INPUT - OUTPUT Method
 Write the according to the Recursion Tree or Decision Tree or choice Diagram.
+
+
+Version A
+↓
+
+First Call = Take
+
+Second Call = Skip
+Version B
+↓
+
+First Call = Skip
+
+Second Call = Take
+
+
+Standard Solution
+⭐⭐⭐⭐⭐ Logic Review
+Base Condition
+if(idx == ip.size()){
+    ans.push_back(op);
+    return;
+}
+
+✅ Perfect
+
+Choose
+op.push_back(ip[idx]);
+
+✅ Perfect
+
+Explore
+solve_standard(ip, idx+1, op, ans);
+
+✅ Perfect
+
+Undo
+op.pop_back();
+
+✅ This is the heart of Backtracking.
+
+Explore Second Choice
+solve_standard(ip, idx+1, op, ans);
+
+✅ Perfect.
+
+
+
+--------------
+💡 Placement Trick (Bahut Important)
+
+Jab bhi kisi question me ye words dekho:
+
+Generate
+Return all
+Print all
+List all
+
+🚨 Dimag me automatic aana chahiye:
+
+"Output size bhi complexity me include karni hai."
+
+Ye bahut common interview follow-up hota hai aur \
+agar tum ye explain kar doge, interviewer ko lagega \
+ki tum complexity ko deeply samajhte ho.
