@@ -1,17 +1,36 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-void printString(string& s){
-    for(auto ch : s) cout<<ch<<" ";
-    cout<<"\n";
-}
+string frequencySort(string s)
+{
+    unordered_map<char,int> freq;
+    for(auto& ch : s){
+        freq[ch]++;
+    }
 
-string frequencySort(string s) {
+    priority_queue<pair<int,char>> pq;
+
+    for(auto& p : freq){
+        pq.push({p.second,p.first});
+    }
+
+    string ans = "";
+    int n = s.length();
+    while (n)
+    {
+        while (pq.top().first)
+        {
+            ans += pq.top().second;
+            pq.top().first -=1;
+        }-
+        
+    }
+    
     
 }
 
+int main()
+{
 
-int main(){
-    
     return 0;
 }
