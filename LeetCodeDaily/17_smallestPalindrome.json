@@ -1,0 +1,42 @@
+[
+  {
+    "input": "abba",
+    "output": "abba"
+  },
+  {
+    "input": "abcba",
+    "output": "abcba"
+  },
+  {
+    "input": "bbaaabb",
+    "output": "abbabba"
+  },
+  {
+    "input": "ccabaccc",
+    "output": "acbccbca"
+  },
+  {
+    "input": "dccaccd",
+    "output": "ccdadcc"
+  },
+  {
+    "input": "mmoom",
+    "output": "mmomm"
+  },
+  {
+    "input": "zyxxyxz",
+    "output": "xyzyzyx"
+  },
+  {
+    "input": "aaaaaaa",
+    "output": "aaaaaaa"
+  },
+  {
+    "input": "aabcbcbaa",
+    "output": "aabcbcbaa"
+  },
+  {
+    "input": "racecar",
+    "output": "acrerca"
+  }
+]
