@@ -430,7 +430,10 @@ int main(){
         // pattern8(n);
         // pattern9(n);
         // pattern10(n);
-       pattern21(n);
+        // pattern11(n);
+        // pattern12(n);
+        pattern13(n);
+    //    pattern21(n);
        cout << endl;
     }
     return 0;
