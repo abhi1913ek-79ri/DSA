@@ -1,0 +1,30 @@
+[
+  {
+    "input": "?6?6?000?3\n",
+    "output": "1\n"
+  },
+  {
+    "input": "25??\n",
+    "output": "0\n"
+  },
+  {
+    "input": "????\n",
+    "output": "0\n"
+  },
+  {
+    "input": "??00\n",
+    "output": "1\n"
+  },
+  {
+    "input": "00??\n",
+    "output": "1\n"
+  },
+  {
+    "input": "?0?0\n",
+    "output": "0\n"
+  },
+  {
+    "input": "9?0?\n",
+    "output": "1\n"
+  }
+]

@@ -1,0 +1,7 @@
+Bhai sun Input smaller karne ka means , n to n-1 hi nhi hota it may , be n to n/2
+// Pow(x,n) O(n)
+// Pow(x,n) O(logn)
+
+// Count Good numbers 
+
+Jab bhi answer me a^b dikhe aur b bahut bada ho, dimaag me turant Binary Exponentiation aani chahiye.
