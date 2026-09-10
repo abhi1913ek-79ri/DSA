@@ -18,6 +18,8 @@ int linearSearchInsertPos(vector<int>& nums,int target){
 int binarySearchInsertPos(vector<int>& nums,int target){
     int n = nums.size();
 
+    if(n == 0) return 0;
+
     int l = 0;
     int h = n-1;
 
