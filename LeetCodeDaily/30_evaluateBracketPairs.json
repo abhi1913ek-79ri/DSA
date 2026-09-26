@@ -1,0 +1,22 @@
+[
+  {
+    "input": "name is a (name) and job is (job)\n2\nname bob\njob developer",
+    "output": "name is a bob and job is developer"
+  },
+  {
+    "input": "(name) is from (city)\n2\nname Abhishek\ncity Delhi",
+    "output": "Abhishek is from Delhi"
+  },
+  {
+    "input": "(name) is (unknown)\n1\nname bob",
+    "output": "bob is ?"
+  },
+  {
+    "input": "Hello (name)!\n1\nname World",
+    "output": "Hello World!"
+  },
+  {
+    "input": "(a)(b)(c)\n3\na one\nb two\nc three",
+    "output": "onetwothree"
+  }
+]
