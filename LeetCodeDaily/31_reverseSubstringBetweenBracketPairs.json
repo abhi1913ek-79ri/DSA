@@ -1,0 +1,34 @@
+[
+  {
+    "input": "(abcd)",
+    "output": "dcba"
+  },
+  {
+    "input": "(u(love)i)",
+    "output": "iloveu"
+  },
+  {
+    "input": "(ed(et(oc))el)",
+    "output": "leetcode"
+  },
+  {
+    "input": "a(bcdefghijkl(mno)p)q",
+    "output": "apmnolkjihgfedcbq"
+  },
+  {
+    "input": "(abc(def)ghi)",
+    "output": "ihgfedcba"
+  },
+  {
+    "input": "((abc))",
+    "output": "abc"
+  },
+  {
+    "input": "a(bc)d",
+    "output": "acbd"
+  },
+  {
+    "input": "((ab)(cd))",
+    "output": "cdab"
+  }
+]
