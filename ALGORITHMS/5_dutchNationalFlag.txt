@@ -1,0 +1,98 @@
+Haan bhai ❤️ Dutch National Flag (DNF) Algorithm ek 3-way partitioning algorithm hai, mainly array ko 3 categories mein divide karne ke liye.
+
+Most famous use case:
+
+Sort an array containing only 0, 1, and 2 in O(n) time and O(1) space.
+
+Example:
+
+Input:  [2, 0, 2, 1, 1, 0]
+
+Output: [0, 0, 1, 1, 2, 2]
+Core idea 🔥
+
+Hum 3 pointers use karte hain:
+
+low     mid              high
+ ↓       ↓                ↓
+[ 0s ][ 1s ][ unknown ][ 2s ]
+
+Initially:
+
+low = 0;
+mid = 0;
+high = n - 1;
+
+Ab nums[mid] dekho.
+
+Case 1: nums[mid] == 0
+
+0 ko left side bhejo:
+
+swap(nums[low], nums[mid]);
+low++;
+mid++;
+Case 2: nums[mid] == 1
+
+1 already middle mein hai:
+
+mid++;
+Case 3: nums[mid] == 2
+
+2 ko right side bhejo:
+
+swap(nums[mid], nums[high]);
+high--;
+
+⚠️ Yahan mid++ nahi karna!
+
+Because jo element high se aaya hai, woh 0, 1, ya 2 kuch bhi ho sakta hai. Usko dobara process karna padega.
+
+Full C++ template
+void sortColors(vector<int>& nums) {
+    int low = 0;
+    int mid = 0;
+    int high = nums.size() - 1;
+
+    while (mid <= high) {
+
+        if (nums[mid] == 0) {
+            swap(nums[low], nums[mid]);
+            low++;
+            mid++;
+        }
+
+        else if (nums[mid] == 1) {
+            mid++;
+        }
+
+        else { // nums[mid] == 2
+            swap(nums[mid], nums[high]);
+            high--;
+        }
+    }
+}
+Example
+[2, 0, 2, 1, 1, 0]
+ ↑              ↑
+mid            high
+
+mid = 2 → swap with high:
+
+[0, 0, 2, 1, 1, 2]
+       ↑        ↑
+      mid      high
+
+Then continue processing mid.
+
+Complexity
+Time  = O(n)
+Space = O(1)
+
+The key thing to remember is:
+
+0 → left, 1 → stay/move forward, 2 → right
+
+And the classic LeetCode problem associated with this is LC 75 — Sort Colors.
+
+If you're learning this for interviews/placements, DNF is basically the most important 3-pointer partition pattern to understand.
