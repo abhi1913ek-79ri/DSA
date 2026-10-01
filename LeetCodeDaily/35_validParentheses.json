@@ -1,0 +1,34 @@
+[
+  {
+    "input": "()",
+    "output": "1"
+  },
+  {
+    "input": "()[]{}",
+    "output": "1"
+  },
+  {
+    "input": "{[]}",
+    "output": "1"
+  },
+  {
+    "input": "([{}])",
+    "output": "1"
+  },
+  {
+    "input": "(]",
+    "output": "0"
+  },
+  {
+    "input": "([)]",
+    "output": "0"
+  },
+  {
+    "input": "]",
+    "output": "0"
+  },
+  {
+    "input": "",
+    "output": "1"
+  }
+]
