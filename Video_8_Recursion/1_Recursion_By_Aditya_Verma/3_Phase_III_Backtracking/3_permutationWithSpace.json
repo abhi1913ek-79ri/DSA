@@ -1,0 +1,26 @@
+[
+  {
+    "input": "ABC",
+    "output": "A B C A BC AB C ABC "
+  },
+  {
+    "input": "AB",
+    "output": "A B AB "
+  },
+  {
+    "input": "ABCD",
+    "output": "A B C D A B CD A BC D A BCD AB C D AB CD ABC D ABCD "
+  },
+  {
+    "input": "A",
+    "output": ""
+  },
+  {
+    "input": "XY",
+    "output": "X Y XY "
+  },
+  {
+    "input": "HELLO",
+    "output": "H E L L O H E L LO H E LL O H E LLO H EL L O H EL LO H ELL O H ELLO HE L L O HE L LO HE LL O HE LLO HEL L O HEL LO HELL O HELLO "
+  }
+]

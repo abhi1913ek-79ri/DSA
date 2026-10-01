@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+// aditya's backtracking
 void solve(vector<int>& ip,int idx ,vector<int> op,vector<vector<int>>& ans){
     // base condition
     if(idx  == ip.size()) {

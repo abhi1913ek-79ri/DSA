@@ -1,0 +1,34 @@
+[
+  {
+    "input": "a1b2",
+    "output": "a1b2 a1B2 A1b2 A1B2"
+  },
+  {
+    "input": "3z4",
+    "output": "3z4 3Z4"
+  },
+  {
+    "input": "12345",
+    "output": "12345"
+  },
+  {
+    "input": "a",
+    "output": "a A"
+  },
+  {
+    "input": "ab",
+    "output": "ab aB Ab AB"
+  },
+  {
+    "input": "a1b2c3",
+    "output": "a1b2c3 a1b2C3 a1B2c3 a1B2C3 A1b2c3 A1b2C3 A1B2c3 A1B2C3"
+  },
+  {
+    "input": "x9y",
+    "output": "x9y x9Y X9y X9Y"
+  },
+  {
+    "input": "m2n4p",
+    "output": "m2n4p m2n4P m2N4p m2N4P M2n4p M2n4P M2N4p M2N4P"
+  }
+]
