@@ -35,7 +35,6 @@ def main():
         s = input()
     except EOFError:
         s = ""
-
     print(int(validParenthesesString(s)))
 
 if __name__ == "__main__":
